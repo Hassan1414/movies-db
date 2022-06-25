@@ -1,0 +1,98 @@
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hover:hover
+{
+    color: rgb(228, 46, 46);
+    transition: color 0.6s;
+}
+input
+{
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom:1px solid #b7b7b7 !important;
+    border-radius: 0 !important;
+}
+/* styling search input placeholder */
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    text-align: center;
+  }
+  
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    text-align: center;
+  }
+  
+input::-ms-input-placeholder { /* Microsoft Edge */
+    text-align: center;
+  }
+
+#side-menu-btn-container
+{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 9999;
+}
+
+#menu-btn
+{
+    position: relative;
+    top:50%;
+    cursor: pointer;
+}
+
+
+#side-menu
+{
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100vh;
+    background-color: #414658;
+    z-index: 8888;
+   
+}
+
+.img-container
+{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.img-container .image-overlay
+{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #242424;
+    transition: all 0.8s;
+    padding: 5px;
+}
+
+.img-container:hover .image-overlay
+{
+    bottom: 0;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+
+footer p
+{
+    color: #999999;
+    font-size: 14px;
+}

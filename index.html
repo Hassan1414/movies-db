@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/index-style.css">
+    
+    <title>Egyptian Party</title>
+</head>
+<body class="bg-black text-white">
+    <section>
+        <input id="search" class="form-control my-5 w-25 mx-auto text-white" type="text" placeholder="Search...">
+    </section>
+    <section id="home" class="container movies-container p-5">
+        <div id="dataContainer" class="row g-4">
+            
+        </div>
+        <div id="side-menu-btn-container" class="fs-2 bg-white text-black vh-100 p-3">
+            <div>
+                <img src="img/logo.png" style="height: 48px;" alt="">
+            </div>
+            <span id="menu-btn" class="bi bi-list"></span>
+        </div>
+    </section>
+    
+    
+    <section id="contact" class="container row my-5">
+        <div class="w-75 mx-auto">
+            <h2 class="fw-bolder my-1">Contact US</h2>
+            <div class="form-container mx-auto">
+                <div class="row g-4 my-3 ">
+                    <div class="col-md-6">
+                        <input id="userNameInput" class="form-control" type="text" placeholder="Name">
+                        <p class="userNameMessage d-none my-2">
+                            <b class="text-danger">username is invalid</b> 
+                            <br>
+                            username can contains:
+                            <br>
+                            lowercase alphabets and Capitalcase alphabets
+                            <br>
+                            Can contain digits
+                            <br>
+                            Allows from 5 to 12 characters
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="emailInput" class="form-control" type="email" placeholder="Email">
+                        <p class="emailMessage d-none my-2">
+                            <b class="text-danger">Email is invalid</b>
+                            <br>
+                            email:
+                            <br>
+                            Must contain the name
+                            <br>
+                            Must contain the @ and .
+                            <br>
+                            Must contain the domain
+                            <br>
+                            Must contain the extension, which could have a child extension (e.g .co.uk)
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="phoneInput" class="form-control" type="text" placeholder="phone">
+                        <p class="phoneMessage d-none my-2">
+                            <b class="text-danger">phone is invalid</b>
+                            <br>
+                            phone:
+                            <br>
+                            Must contain 11 digits only
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="ageInput" class="form-control" type="number" placeholder="Age">
+                        <p class="ageMessage d-none my-2">
+                            <b class="text-danger">age is invalid</b>
+                            <br>
+                            Age:
+                            <br>
+                            Must be between 5 and 90 years old 
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="passInput" class="form-control" type="password" placeholder="password">
+                        <p class="passMessage d-none my-2">
+                            <b class="text-danger">password is invalid</b>
+                            <br>
+                            password
+                            <br>
+                            Can contain @, _ and -
+                            <br>
+                            Must be 8 to 20 characters long
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <input id="repassInput" class="form-control" type="password" placeholder="re enter password">
+                        <p class="repassMessage d-none my-2">
+                            <b class="text-danger">re password is invalid</b>
+                            <br>
+                            password
+                            <br>
+                            Can contain @, _ and -
+                            <br>
+                            Must be 8 to 20 characters long
+                        </p>
+                    </div>
+                </div>
+                
+                <button id="submit" class="btn btn-outline-danger">submit</button>
+            </div>
+        </div> 
+    </section>
+
+    <div id="side-menu" class="bg-black p-3 pe-5">
+        <ul class="list-unstyled p-2">
+            <li class="my-3">
+                <a href="#nowPlaying" id="nowPlaying" class="link-light text-decoration-none fs-5 hover">Now Playing</a>
+            </li>
+            <li class="my-3">
+                <a href="#popular" id="popular" class="link-light text-decoration-none fs-5 hover">Popular</a>
+            </li>
+            <li class="my-3">
+                <a href="#topRated" id="topRated" class="link-light text-decoration-none fs-5 hover">Top Rated</a>
+            </li>
+            <li class="my-3">
+                <a href="#trending" id="trending" class="link-light text-decoration-none fs-5 hover">Trending</a>
+            </li>
+            <li class="my-3">
+                <a href="#upcoming" id="upcoming" class="link-light text-decoration-none fs-5 hover">Upcoming</a>
+            </li>
+        </ul>
+        <footer>
+            <span class="bi bi-facebook mx-2 fs-6 hover"></span>
+            <span class="bi bi-twitter mx-2 fs-6 hover"></span>
+            <span class="bi bi-github mx-2 fs-6 hover"></span>
+            <p class="my-2">Copyright Â© 2019 All Rights Reserved.</p>
+        </footer>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
